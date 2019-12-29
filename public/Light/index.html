@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Crypterio</title>
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/icons.css">
+	<link rel="stylesheet" href="css/ui.css">
+	<link rel="stylesheet" href="css/transition.css">
+</head>
+<body class="crypt-dark">
+	<header>
+		<div class="container-full-width">
+			<div class="crypt-header">
+				<div class="row">
+                    <marquee behavior="scroll" direction="left" scrollamount="5">CNBC - DAX 13337.11 <span class="crypt-up">+36.13 +0.27%</span> FTSE* 7644.90 <span class="crypt-up">+12.66 +0.17%</span> CAC* 6037.39 <span class="crypt-up">+7.84 +0.13% </span> FTSE MIB* 23757.60 <span class="crypt-down">-140.82 -0.59%</span> STOXX600* 419.74 <span class="crypt-up">+0.88 +0.21% </span>DAX 13337.11 <span class="crypt-up">+36.13 +0.27%</span> FTSE* 7644.90 <span class="crypt-up">+12.66 +0.17%</span> CAC* 6037.39 <span class="crypt-up">+7.84 +0.13% </span> FTSE MIB* 23757.60 <span class="crypt-down">-140.82 -0.59%</span> STOXX600* 419.74 <span class="crypt-up">+0.88 +0.21% </span></marquee>
+                    <marquee behavior="scroll" direction="left" scrollamount="10">CNBC - DAX 13337.11 <span class="crypt-up">+36.13 +0.27%</span> FTSE* 7644.90 <span class="crypt-up">+12.66 +0.17%</span> CAC* 6037.39 <span class="crypt-up">+7.84 +0.13% </span> FTSE MIB* 23757.60 <span class="crypt-down">-140.82 -0.59%</span> STOXX600* 419.74 <span class="crypt-up">+0.88 +0.21% </span></marquee>
+                    <marquee behavior="scroll" direction="left" scrollamount="8">CNBC - DAX 13337.11 <span class="crypt-up">+36.13 +0.27%</span> FTSE* 7644.90 <span class="crypt-up">+12.66 +0.17%</span> CAC* 6037.39 <span class="crypt-up">+7.84 +0.13% </span> FTSE MIB* 23757.60 <span class="crypt-down">-140.82 -0.59%</span> STOXX600* 419.74 <span class="crypt-up">+0.88 +0.21% </span></marquee>
+				</div>
+			</div>
+		</div>
+		<div class="crypt-mobile-menu">
+			<ul class="crypt-heading-menu">
+				<li class="active"><a href="">Exchange</a></li>
+				<li><a href="">Market Cap</a></li>
+				<li><a href="">Treanding</a></li>
+				<li><a href="">Tools</a></li>
+				<li class="crypt-box-menu menu-red"><a href="">register</a></li>
+				<li class="crypt-box-menu menu-green"><a href="">login</a></li>
+			</ul>
+			<div class="crypt-gross-market-cap">
+				<h5>$34.795.90 <span class="crypt-up pl-2">+3.435 %</span></h5>
+				<h6>0.7925.90  YHOO <span class="crypt-down pl-2">+7.435 %</span></h6>
+			</div>
+		</div>
+	</header>
+	<!-- Main Content -->
+	<div class="container-fluid">
+		<div class="row sm-gutters">
+			<div class="col-lg-6">
+				<div class="table-responsive">
+					<table class="table table-striped crypt-table-market-cap mt-4">
+					  <thead>
+					    <tr>
+					      <th scope="col">Rank</th>
+					      <th scope="col" class="text-left pl-2">Name</th>
+					      <th scope="col">Market Cap</th>
+					      <th scope="col">Price</th>
+					      <th scope="col">24 Hour Volume</th>
+					      <th scope="col">Change</th>
+					      <th scope="col">7 days</th>
+					    </tr>
+					  </thead>
+					  <tbody>
+					    <tr>
+					      <th>1</th>
+					      <td class="text-left pl-2 font-weight-bold"><img src="images/coins/btc.png" width="20" class="pr-1 crypt-market-cap-logo" alt="coin"> <a href="index.html">Yahoo</a></td>
+					      <td>$239048209</td>
+					      <td>$4559</td>
+					      <td>$2344234</td>
+					      <td class="crypt-down"> -0.04%</td>
+					      <td
+			      			class ="crypt-marketcap-canvas"
+			      			data-charts ="[65,59,81,81,56,55,40,80,90]"
+			      			data-bg = "fcbcb3"
+			      			data-border = "8cd8aa">
+				      		<canvas></canvas>
+				      	  </td>
+					    </tr>
+					    <tr>
+					      <th>2</th>
+					      <td class="text-left pl-2 font-weight-bold"><img src="images/coins/eth.png" width="20" class="pr-1 crypt-market-cap-logo" alt="coin"> <a href="index.html">AOL</a></td>
+					      <td>$239048209</td>
+					      <td>$4559</td>
+					      <td>$2344234</td>
+					      <td class="crypt-down"> -4.04%</td>
+					      <td
+			      			class ="crypt-marketcap-canvas"
+			      			data-charts ="[34,54,23,56,76,78,34,56,45]"
+			      			data-bg = "d3f0df"
+			      			data-border = "8cd8aa">
+				      		<canvas></canvas>
+				      	  </td>
+					    </tr>
+					    <tr>
+					      <th>3</th>
+					      <td class="text-left pl-2 font-weight-bold"><img src="images/coins/ltc.png" width="20" class="pr-1 crypt-market-cap-logo" alt="coin"> <a href="index.html">Liten Corp.</a></td>
+					      <td>$239048209</td>
+					      <td>$4559</td>
+					      <td>$2344234</td>
+					      <td class="crypt-up">3.04%</td>
+					      <td
+			      			class ="crypt-marketcap-canvas"
+			      			data-charts ="[55,40,80,90,65,59,81,81,56]"
+			      			data-bg = "d3f0df"
+			      			data-border = "8cd8aa">
+				      		<canvas></canvas>
+				      	  </td>
+					    </tr>
+					    <tr>
+					      <th>4</th>
+					      <td class="text-left pl-2 font-weight-bold"><img src="images/coins/btcc.png" width="20" class="pr-1 crypt-market-cap-logo" alt="coin">  <a href="index.html">
+					      	Bacanal Oil
+					      </a></td>
+					      <td>$239048209</td>
+					      <td>$4559</td>
+					      <td>$2344234</td>
+					      <td class="crypt-down">-0.45%</td>
+					      <td
+			      			class ="crypt-marketcap-canvas"
+			      			data-charts ="[89,23,67,45,23,45,78,34,56,67]"
+			      			data-bg = "d3f0df"
+			      			data-border = "8cd8aa">
+				      		<canvas></canvas>
+				      	  </td>
+					    </tr>
+					  </tbody>
+					</table>
+				</div>
+				<div id="depthchart" class="depthchart h-40 crypto-depth-chart-small-height crypt-dark-segment"></div>
+			</div>
+			<div class="col-lg-6">
+				<div class="row sm-gutters">
+					<div class="col-md-6 pr-0">
+						<div class="crypt-fulldiv-linechart mt-4">
+							<h4 class="coinname crypt-yellow"><i class="cf cf-btc-alt"></i> Yahoo</h4>
+							<div
+				      			class ="crypt-individual-marketcap"
+				      			data-charts ="[65,59,81,81,70,55,80,80,90]"
+				      			data-bg = "fdddb7"
+				      			data-border = "f8a036">
+                                <div class="marquee--container"><div class="marquee--inner">
+                                        <canvas></canvas></div></div>
+					      	</div>
+					      	<div class="coin-meta-data text-center">
+					      		<h5 class="crypt-down">+9.05% <img src="images/download-arrow.svg" width="15" class="crypt-market-cap-logo" alt="coin"></h5>
+					      		<h3>$689405689</h3>
+					      		<h6>MARKET CAP</h6>
+					      	</div>
+						</div>
+					</div>
+					<div class="col-md-6 pl-0">
+						<div class="crypt-fulldiv-linechart mt-4">
+							<h4 class="coinname crypt-green"><i class="cf cf-eth"></i> AOL</h4>
+							<div
+				      			class ="crypt-individual-marketcap"
+				      			data-charts ="[95,59,81,81,65,85,80,70,90]"
+				      			data-bg = "bfe9cf"
+				      			data-border = "49c279">
+                                <div class="marquee--container"><div class="marquee--inner">
+                                        <canvas></canvas></div></div>
+					      	</div>
+					      	<div class="coin-meta-data text-center">
+					      		<h5 class="crypt-green">+9.05% <img src="images/up-arrow.svg" width="15" class="crypt-market-cap-logo" alt="coin"></h5>
+					      		<h3>$405689405689</h3>
+					      		<h6>MARKET CAP</h6>
+					      	</div>
+						</div>
+					</div>
+					<div class="col-md-12 pl-2 ml-1">
+						<div id="carousel-pager" class="carousel vert slide crypt-currency-slider mt-3" data-ride="carousel" data-interval="3000">
+
+					        <!-- Carousel items -->
+
+					        <div class="carousel-inner vertical">
+					          <div class="active  carousel-item item">
+					            <div class="crypt-slider-content">
+					            	<div class="row no-gutters">
+					            		<div class="col-xs-4 crypt-slider-balance">
+					            			<h5><i class="cf cf-eth"></i> ETH</h5>
+					            			<p>0.938445675 ETH</p>
+					            			<p><span class="crypt-down">-4.55%</span><span class="fright"><a href="" class="crypt-up"><b>Buy</b></a><a href="" class="crypt-down"><b>Sell</b></a></span></p>
+					            		</div>
+					            		<div class="col-xs-5">
+					            			<div class="crypt-slider-current-status">
+						            			<h3>$39485  <span class="ml-3 crypt-up">$13.99</span></h3>
+						            			<h5>0.03434 ETH  <span class="ml-3 crypt-down">-$5.99</span></h5>
+						            			<p><b>1 ETH = 123.65 USD</b></p>
+					            			</div>
+					            		</div>
+					            		<div class="col-xs-3 d-xs-none d-sm-block d-md-block d-lg-none d-xl-block">
+					            			<div class="crypt-exchange-hints">
+						            			<img src="images/logo.jpg" class="mt-3" alt="logo">
+						            			<p class="mb-1 mt-3"><b>Choose the best exchange</b></p>
+						            			<a href="" class="crypt-down"><b>Charges s small price</b></a>
+					            			</div>
+					            		</div>
+					            	</div>
+					            </div>
+					          </div>
+					          <div class=" carousel-item item">
+					            <div class="crypt-slider-content">
+					            	<div class="row no-gutters">
+					            		<div class="col-xs-4 crypt-slider-balance">
+					            			<h5><i class="cf cf-btc-alt"></i>  YHOO</h5>
+					            			<p>0.938445675  YHOO</p>
+					            			<p><span class="crypt-up">4.55%</span><span class="fright"><a href="" class="crypt-up"><b>Buy</b></a><a href="" class="crypt-down"><b>Sell</b></a></span></p>
+					            		</div>
+					            		<div class="col-xs-5">
+					            			<div class="crypt-slider-current-status">
+						            			<h3>$39485  <span class="ml-3 crypt-up">$13.99</span></h3>
+						            			<h5>0.453434  YHOO  <span class="ml-3 crypt-up">$5.99</span></h5>
+						            			<p><b>1  YHOO = 123.65 USD</b></p>
+					            			</div>
+					            		</div>
+					            		<div class="col-xs-3 d-xs-none d-sm-block d-md-block d-lg-none d-xl-block">
+					            			<div class="crypt-exchange-hints">
+						            			<img src="images/logo.jpg" class="mt-3" alt="logo">
+						            			<p class="mb-1 mt-3"><b>Choose the best exchange</b></p>
+						            			<a href="" class="crypt-down"><b>Charges s small price</b></a>
+					            			</div>
+					            		</div>
+					            	</div>
+					            </div>
+					          </div>
+					      </div>
+
+					      <!-- Controls -->
+
+					      <a class="left carousel-control" href="#carousel-pager" role="button" data-slide="prev"> <span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span> <span class="sr-only">Previous</span> </a> <a class="right carousel-control" href="#carousel-pager" role="button" data-slide="next"> <span class="chevron-circle-down" aria-hidden="true"></span> <span class="sr-only">Next</span> </a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+	<div class="container-fluid">
+		<div class="row sm-gutters">
+			<div class="col-lg-5">
+				<div class="crypt-boxed-area">
+					<h6 class="crypt-bg-head"><b class="crypt-up">BUY</b> / <b class="crypt-down">SELL</b></h6>
+					<div class="row no-gutters">
+						<div class="col-md-6">
+							<div class="crypt-buy-sell-form">
+								<p>Buy <span class="crypt-up"> YHOO</span> <span class="fright">Available: <b class="crypt-up">20  YHOO</b></span></p>
+								<div class="crypt-buy">
+									<div class="input-group mb-3">
+									  	<div class="input-group-prepend">
+									    	<span class="input-group-text">Price</span>
+									  	</div>
+									  	<input type="text" class="form-control" placeholder="0.02323476" readonly>
+									  	<div class="input-group-append">
+									   	 	<span class="input-group-text"> YHOO</span>
+									  	</div>
+									</div>
+									<div class="input-group mb-3">
+									  	<div class="input-group-prepend">
+									    	<span class="input-group-text">Amount</span>
+									  	</div>
+									  	<input type="number" class="form-control">
+									  	<div class="input-group-append">
+									   	 	<span class="input-group-text"> YHOO</span>
+									  	</div>
+									</div>
+									<div class="input-group mb-3">
+									  	<div class="input-group-prepend">
+									    	<span class="input-group-text">Total</span>
+									  	</div>
+									  	<input type="text" class="form-control" readonly>
+									  	<div class="input-group-append">
+									   	 	<span class="input-group-text"> YHOO</span>
+									  	</div>
+									</div>
+									<div>
+										<p>Fee: <span class="fright">100%x0.2 = 0.02</span></p>
+									</div>
+									<div class="text-center mt-5 mb-5 crypt-up">
+										<p>You will approximately pay</p>
+										<h4>0.09834  YHOO</h4>
+									</div>
+									<div class="menu-green">
+										<a href="" class="crypt-button-green-full">Buy</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="crypt-buy-sell-form">
+								<p>Sell <span class="crypt-down"> YHOO</span> <span class="fright">Available: <b class="crypt-down">20  YHOO</b></span></p>
+								<div class="crypt-sell">
+									<div class="input-group mb-3">
+									  	<div class="input-group-prepend">
+									    	<span class="input-group-text">Price</span>
+									  	</div>
+									  	<input type="text" class="form-control" placeholder="0.02323476" readonly>
+									  	<div class="input-group-append">
+									   	 	<span class="input-group-text"> YHOO</span>
+									  	</div>
+									</div>
+									<div class="input-group mb-3">
+									  	<div class="input-group-prepend">
+									    	<span class="input-group-text">Amount</span>
+									  	</div>
+									  	<input type="number" class="form-control">
+									  	<div class="input-group-append">
+									   	 	<span class="input-group-text"> YHOO</span>
+									  	</div>
+									</div>
+									<div class="input-group mb-3">
+									  	<div class="input-group-prepend">
+									    	<span class="input-group-text">Total</span>
+									  	</div>
+									  	<input type="text" class="form-control" readonly>
+									  	<div class="input-group-append">
+									   	 	<span class="input-group-text"> YHOO</span>
+									  	</div>
+									</div>
+									<div>
+										<p>Fee: <span class="fright">100%x0.2 = 0.02</span></p>
+									</div>
+									<div class="text-center mt-5 mb-5 crypt-down">
+										<p>You will approximately pay</p>
+										<h4>0.09834  YHOO</h4>
+									</div>
+									<div>
+										<a href="" class="crypt-button-red-full">Sell</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-7">
+				<div>
+					<div class="crypt-market-status">
+					<div>
+					  <!-- Nav tabs -->
+					  	<ul class="nav nav-tabs">
+					    	<li role="presentation"><a href="#closed-orders"  class="active" data-toggle="tab">Closed Orders</a></li>
+					    	<li role="presentation"><a href="#active-orders" data-toggle="tab">Active Orders</a></li>
+					    	<li role="presentation"><a href="#balance" data-toggle="tab">Balance</a></li>
+					  	</ul>
+
+					  <!-- Tab panes -->
+					  <div class="tab-content">
+					    <div role="tabpanel" class="tab-pane active" id="closed-orders">
+					    	<table class="table table-striped">
+							  <thead>
+							    <tr>
+  							      <th scope="col">Time</th>
+							      <th scope="col">Buy/sell</th>
+							      <th scope="col">Price  YHOO</th>
+							      <th scope="col">Amount BPS</th>
+							      <th scope="col">Dealt BPS</th>
+							      <th scope="col">Operation</th>
+							    </tr>
+							  </thead>
+							  <tbody>
+							    <tr>
+							      <th>22:35:59</th>
+							      <td class="crypt-up">Buy</td>
+							      <td class="crypt-up">0.000056</td>
+							      <td class="crypt-up">0.000056</td>
+							      <td class="crypt-up">0.0003456</td>
+							      <td>5.3424984</td>
+							    </tr>
+							    <tr>
+							      <th>22:35:59</th>
+							      <td class="crypt-down">Sell</td>
+							      <td class="crypt-down">0.000056</td>
+							      <td class="crypt-down">0.000056</td>
+							      <td class="crypt-down">0.0003456</td>
+							      <td>5.3424984</td>
+							    </tr>
+							    <tr>
+							      <th>22:35:59</th>
+							      <td class="crypt-up">Buy</td>
+							      <td class="crypt-up">0.000056</td>
+							      <td class="crypt-up">0.000056</td>
+							      <td class="crypt-up">0.0003456</td>
+							      <td>5.3424984</td>
+							    </tr>
+							    <tr>
+							      <th>22:35:59</th>
+							      <td class="crypt-down">Sell</td>
+							      <td class="crypt-down">0.000056</td>
+							      <td class="crypt-down">0.000056</td>
+							      <td class="crypt-down">0.0003456</td>
+							      <td>5.3424984</td>
+							    </tr>
+							  </tbody>
+							</table>
+					    </div>
+					    <div role="tabpanel" class="tab-pane" id="active-orders">
+					    	<table class="table table-striped">
+							  <thead>
+							    <tr>
+							      <th scope="col">Time</th>
+							      <th scope="col">Buy/sell</th>
+							      <th scope="col">Price  YHOO</th>
+							      <th scope="col">Amount BPS</th>
+							      <th scope="col">Dealt BPS</th>
+							      <th scope="col">Operation</th>
+							    </tr>
+							  </thead>
+							  <tbody>
+							    <tr>
+							      <th>12:25:29</th>
+							      <td class="crypt-down">Sell</td>
+							      <td class="crypt-down">0.00576</td>
+							      <td class="crypt-down">0.00856</td>
+							      <td class="crypt-down">0.0003456</td>
+							      <td>24984</td>
+							    </tr>
+							    <tr>
+							      <th>12:25:31</th>
+							      <td class="crypt-down">Sell</td>
+							      <td class="crypt-down">0.009156</td>
+							      <td class="crypt-down">0.003456</td>
+							      <td class="crypt-down">0.0003456</td>
+							      <td>5.3424984</td>
+							    </tr>
+							    <tr>
+							      <th>12:25:33</th>
+							      <td class="crypt-up">Buy</td>
+							      <td class="crypt-up">0.0056</td>
+							      <td class="crypt-up">0.0065</td>
+							      <td class="crypt-up">0.03456</td>
+							      <td>424984</td>
+							    </tr>
+							    <tr>
+							      <th>12:25:39</th>
+							      <td class="crypt-up">Buy</td>
+							      <td class="crypt-up">0.000056</td>
+							      <td class="crypt-up">0.000056</td>
+							      <td class="crypt-up">0.0003456</td>
+							      <td>5.3424984</td>
+							    </tr>
+                              </tbody>
+							</table>
+					    </div>
+					    <div role="tabpanel" class="tab-pane" id="balance">
+					    	<table class="table table-striped">
+							  <thead>
+							    <tr>
+							      <th scope="col">Currency</th>
+							      <th scope="col">Amount</th>
+							      <th scope="col">Volume</th>
+							    </tr>
+							  </thead>
+							  <tbody>
+							    <tr>
+							      <th> YHOO</th>
+							      <td>0.0000564</td>
+							      <td>6.6768876</td>
+							    </tr>
+							  </tbody>
+							</table>
+					    </div>
+					  </div>
+
+					</div>
+				</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<footer>
+
+	</footer>
+	<script src="js/jquery.js"></script>
+	<script src="js/Chart.min.js"></script>
+	<script src="js/chart.js"></script>
+
+	<script src="amc/core.js"></script>
+	<script src="amc/charts.js"></script>
+	<script src="amc/dark.js"></script>
+	<script src="amc/animated.js"></script>
+	<script src="js/jquery.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="bootstrap/js/bootstrap.bundle.js"></script>
+	<script src="bootstrap/js/bootstrap.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/amc.js"></script>
+</body>
+</html>
