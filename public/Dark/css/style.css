@@ -20,6 +20,7 @@ Table Of contents
 /*
 ------------- Helper Class ---------------
  */
+
 body{
     background: #f9faff;
     overflow-x: hidden;
@@ -28,6 +29,50 @@ body{
 }
 iframe body{
     margin: 0;
+}
+/*------------- dark theme -------------*/
+.crypt-dark{
+    background: #0e162d;
+}
+.crypt-dark .icon-big{
+    color: #fff;
+}
+.crypt-dark .input-group select{
+    background: #131a33;
+    border: 1px solid #2f3a56;
+}
+.crypt-dark h1,
+.crypt-dark h2,
+.crypt-dark h3,
+.crypt-dark h4,
+.crypt-dark h5,
+.crypt-dark h6,
+.crypt-dark p,
+.crypt-dark a{
+    color: #fff;
+}
+.crypt-dark-segment{
+    background: #131722;
+}
+.crypt-deepblue-segment{
+    background: #131a33;
+}
+body.crypt-dark .input-group-text{
+
+    color: #e9ecef;
+    text-align: center;
+    white-space: nowrap;
+    background-color: #0e162d;
+    border: 1px solid #2f3a56;
+    border-radius: 0;
+}
+body.crypt-dark .form-control {
+    color: #ffffff;
+    background-color: #0e162d;
+    background-clip: padding-box;
+    border: 1px solid #2f3a56;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 .bg-white{
     background: #fff;
@@ -108,6 +153,9 @@ g[opacity="0.4"]{
     color: #555;
     box-shadow: 0 3px 30px #f1f1f1;
 }
+body.crypt-dark .crypt-btn:hover{
+    box-shadow: none;
+}
 .crypt-button-inline{
     display: inline-block;
 }
@@ -134,12 +182,21 @@ g[opacity="0.4"]{
     border: 1px solid #f1f1f1;
     background: #fff;
 }
+body.crypt-dark .crypt-bg-head{
+    background: #1f2638;
+    padding: 13px;
+}
+body.crypt-dark .crypt-boxed-area{
+    background: #131a33;
+    border: none;
+    color: #fff;
+}
 
 .crypt-up{
-    color: #49c279;
+    color: #49c279 !important;
 }
 .crypt-down{
-    color: red;
+    color: red !important;
 }
 .padding-left{
     padding-left: 30px;
@@ -161,7 +218,8 @@ g[opacity="0.4"]{
     color: #fff;
 }
 .crypt-button-red-full{
-    background: #f7614e;
+    background: #f7614e !important;
+    border: none !important;
     color: #fff;
     padding: 9px;
     text-align: center;
@@ -234,9 +292,9 @@ g[opacity="0.4"]{
     transform: rotate(45deg);
     box-shadow: 0 -2px 20px #ddd;
 }
-.crypt-gross-market-cap {
-    padding: 25px;
-    background: #fff;
+
+.crypt-gross-market-cap{
+    margin: 15px 0 20px 0;
 }
 .crypt-gross-market-cap p:first-child{
     margin-bottom: 5px;
@@ -251,6 +309,7 @@ g[opacity="0.4"]{
 /* -----------------------------------
 ----------- Header -------------------
 ------------------------------------ -- */
+
 .crypt-header i.menu-toggle{
     position: absolute;
     right: 15px;
@@ -281,10 +340,10 @@ g[opacity="0.4"]{
     text-transform: uppercase;
     font-size: 14px;
     font-weight: 600;
-    margin-right: 16px;
+    margin-right: 18px;
 }
 .crypt-heading-menu li:last-child{
-    margin-right: 3px;
+    margin-right: 7px !important;
 }
 .crypt-heading-menu li.active{
 }
@@ -304,6 +363,131 @@ g[opacity="0.4"]{
     color: #f7614e;
     border-bottom: 1px solid #f7614e;
 }
+.crypt-dark .crypt-header{
+    box-shadow: none;
+    background: #202943;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    height: 80px;
+    font-size: 18px;
+    color: #fff;
+}
+.crypt-dark .crypt-mega-dropdown-menu{
+    position: relative;
+}
+.crypt-dark .crypt-mega-dropdown-menu a.crypt-mega-dropdown-toggle{
+    color: #ffffff;
+    display: inline-block;
+    font-weight: 600;
+    padding: 25px 20px;
+    text-decoration: none;
+    outline: none;
+    font-size: 15px;
+    border-right: 1px solid #202943;
+}
+.crypt-dark .crypt-mega-dropdown-menu a.crypt-mega-dropdown-toggle i{
+    font-weight: 600;
+}
+.crypt-dark .crypt-mega-dropdown-menu a.crypt-mega-dropdown-toggle:hover{
+    text-decoration: none;
+}
+.crypt-dark .crypt-mega-dropdown-menu-block{
+    position: absolute;
+    background: #202943;
+    padding: 20px;
+    width: 550px;
+    box-shadow: 0 7px 17px rgba(0,0,0,0.08);
+    top: 76px;
+    opacity: 0;
+    display: none;
+    transition: all 0.4s ease;
+    border: 1px solid #202943;
+}
+.crypt-dark .crypt-mega-dropdown-menu-block.shown{
+    opacity: 1;
+    display: block;
+}
+
+.crypt-dark .crypt-mega-dropdown-menu-block:after{
+    position: absolute;
+    content: '';
+    z-index: -1;
+    top: -10px;
+    width: 20px;
+    height: 20px;
+    background: #202943;
+    transform: rotate(45deg);
+    box-shadow: 0 -2px 20px #0e162d;
+}
+
+.crypt-dark .crypt-gross-market-cap {
+    padding: 25px;
+    background: #1f2638;
+}
+.crypt-dark .crypt-gross-market-cap p:first-child{
+    margin-bottom: 5px;
+    font-size: 12px;
+    font-weight: 600;
+}
+.crypt-dark .crypt-gross-market-cap p:last-child{
+    margin-bottom: 0px;
+    font-size: 14px;
+    font-weight: 600;
+}
+/* --menu -- */
+.crypt-dark .crypt-header i.menu-toggle{
+    position: absolute;
+    right: 15px;
+    transform: rotate(45deg);
+    top: 50%;
+    font-size: 33px;
+    transition: all 0.4s ease;
+    transform: translateY(-50%) rotate(0deg);
+}
+.crypt-dark .crypt-header i:hover{
+    cursor: pointer;
+}
+.crypt-dark .crypt-header i.open{
+    transform: translateY(-50%) rotate(0deg);
+}
+.crypt-dark .crypt-heading-menu{
+    list-style: none;
+    padding-left: 0;
+    margin: 16px 0;
+    float: right;
+}
+.crypt-dark .crypt-heading-menu li{
+    margin: 0 -18px;
+    padding: 0 10px;
+}
+.crypt-dark .crypt-heading-menu li{
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+    margin-right: 16px;
+}
+.crypt-dark .crypt-heading-menu li.active{
+}
+.crypt-dark .crypt-heading-menu li a{
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.4s ease;
+    padding: 9px 0px;
+    display: inline-block;
+    font-size: 11px;
+}
+.crypt-dark .crypt-heading-menu li a:hover{
+    color: #f7614e;
+    border-bottom: 1px solid #f7614e;
+}
+.crypt-dark .crypt-heading-menu li.active a{
+    color: #f7614e;
+    border-bottom: 1px solid #f7614e;
+}
 
 .menu-red{
     background: #f7614e;
@@ -313,7 +497,7 @@ g[opacity="0.4"]{
 }
 .menu-red a:hover{
     border-bottom: none !important;
-    background: #f7614e;
+    background: #e2513e;
 }
 .menu-green{
     background: #49c279;
@@ -323,7 +507,7 @@ g[opacity="0.4"]{
 }
 .menu-green a:hover{
     border-bottom: none !important;
-    background: ##30ad62 !important;
+    background: #30ad62 !important;
 }
 
 /*----------------------------------
@@ -349,6 +533,11 @@ g[opacity="0.4"]{
 .crypt-mobile-menu.show{
     right: 0;
 }
+.crypt-dark .crypt-mobile-menu.show {
+    right: 0;
+    background: #202943;
+    box-shadow: 0 20px 20px #000;
+}
 .crypt-mobile-menu .crypt-heading-menu{
     list-style: none;
     padding-left: 0;
@@ -356,6 +545,7 @@ g[opacity="0.4"]{
     float: none;
 }
 .crypt-mobile-menu .crypt-heading-menu li{
+    /* padding: 10px; */
     margin: 0 -18px;
 }
 .crypt-mobile-menu .crypt-heading-menu li{
@@ -380,9 +570,7 @@ g[opacity="0.4"]{
     margin: 10px;
 }
 
-/*--------------------------
----------  Side menu bar ----
-------------------------------*/
+/*---  Side menu bar ----*/
 .crypt-side-menu{
     height: 100vh;
     position: fixed;
@@ -393,8 +581,11 @@ g[opacity="0.4"]{
     z-index: 11;
     padding-top: 115px;
 }
+body.crypt-dark .crypt-side-menu{
+    background: #131a33 !important;
+}
 .crypt-left-sided{}
-.crypt-floatable-menu{}
+
 
 .crypt-side-menu ul{
     padding: 0;
@@ -412,6 +603,9 @@ g[opacity="0.4"]{
     text-decoration: none;
     position: relative;
 }
+body.crypt-dark .crypt-side-menu ul li a{
+    color: #fff;
+}
 .crypt-side-menu ul li a:after{
     position: absolute;
     content: '';
@@ -425,6 +619,8 @@ g[opacity="0.4"]{
 .crypt-side-menu ul li a:hover:after{
     width: 100%;
 }
+/* market status */
+
 .crypt-market-status{
     background: #fff;
     box-shadow: 0 2px 10px #f1f1f1;
@@ -449,6 +645,9 @@ ul.nav-tabs li{}
 ul.nav-tabs li a.active{
     border-bottom: 3px solid #f7614e;
 }
+.tab-content{
+
+}
 .crypt-table-danger{
     background: #ffedea !important;
 }
@@ -462,10 +661,84 @@ table td,
 table th{
     border: none !important;
 }
+
+/*---- Dark ----*/
+body.crypt-dark .crypt-market-status{
+    background: #fff;
+    box-shadow: none;
+}
+body.crypt-dark ul.nav-tabs{
+    padding: 13px 0px;
+    border: none;
+    background: #1f2638;
+}
+body.crypt-dark ul.nav-tabs li{
+    padding: 0 13px;
+}
+body.crypt-dark ul.nav-tabs li a{
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding-bottom: 12px;
+    font-size: 13px;
+}
+body.crypt-dark ul.nav-tabs li{}
+body.crypt-dark ul.nav-tabs li a.active{
+    border-bottom: 3px solid #f7614e;
+}
+body.crypt-dark .tab-content table{
+    margin-bottom: 0;
+}
+body.crypt-dark .tab-content table thead{
+    background: #131722;
+    color: #fff;
+}
+body.crypt-dark .tab-content table thead tr{
+    cursor: none;
+    background: #131722 !important;
+}
+body.crypt-dark .tab-content table thead tr:hover{
+    background: #131722 !important;
+
+}
+body.crypt-dark .tab-content table tbody{}
+body.crypt-dark .tab-content table tr:hover{
+    background: #242c40 !important;
+    cursor: pointer;
+}
+body.crypt-dark .tab-content table tr:nth-of-type(odd){
+    background: #131a33;
+    color: #fff;
+}
+body.crypt-dark .tab-content table tr:nth-of-type(even){
+    background: #11152b;
+    color: #fff;
+}
+body.crypt-dark .crypt-table-danger{
+    background: #ffedea !important;
+}
+body.crypt-dark .crypt-table-success{
+    background: #f9fcff !important;
+}
+body.crypt-dark .crypt-table-hover tr:hover{
+    background: #ffedea !important;
+}
+body.crypt-dark table td,
+body.crypt-dark table th{
+    border: none !important;
+}
+body.crypt-dark .no-orders{
+    background: #131a33;
+}
+/*------------ Table dark ends -------*/
+
 #depthchart {
-  width: 110%;
+  width: 100%;
   height: 350px;
-   margin-left: -75px;
+}
+.crypto-depth-chart-small-height{
+    height: 270px !important;
 }
 #chartdiv {
   width: 100%;
@@ -487,7 +760,17 @@ table th{
     padding: 20px;
     border-top: 1px solid #f1f1f1;
 }
+body.crypt-dark .crypt-buy{
+    padding: 20px;
+    border-top: 1px solid #233161;
+    border-right: 1px solid #233161;
+}
+body.crypt-dark .crypt-sell{
+    padding: 20px;
+    border-top: 1px solid #233161;
+}
 
+/*0--- market Capacity ----*/
 .crypt-table-striped tbody tr:nth-of-type(even){
     background-color: #f7fbff;
 }
@@ -495,8 +778,16 @@ table th{
     background: #fff;
     font-size: 15px;
 }
+body.crypt-dark .crypt-table-market-cap{
+    background: none;
+    font-size: 15px;
+    color: #fff;
+}
 .crypt-table-market-cap thead{
     background: #ecf4fe;
+}
+body.crypt-dark .crypt-table-market-cap thead{
+    background: #1f2638;
 }
 .crypt-table-market-cap thead tr th{
     text-align: center;
@@ -504,7 +795,9 @@ table th{
     vertical-align: middle;
 }
 .crypt-table-market-cap tbody{}
-.crypt-table-market-cap tbody tr{}
+.crypt-table-market-cap tbody tr:hover{
+    background: #242c40 !important
+}
 .crypt-table-market-cap tbody tr th{
     padding: 25px 20px;
     text-align: center;
@@ -513,13 +806,16 @@ table th{
     padding: 25px 0;
     text-align: center;
 }
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 500px) {
     .crypt-table-market-cap tbody tr td{
         min-width: 103px;
     }
 }
 .crypt-table-market-cap tbody tr td a{
     color: #555;
+}
+body.crypt-dark .crypt-table-market-cap tbody tr td a{
+    color: #fff;
 }
 .crypt-table-market-cap tbody tr td:last-child{
     max-width: 120px;
@@ -533,10 +829,10 @@ img.crypt-market-cap-logo{
     margin-top: -3px;
 }
 
+
 /*---------------------------------------
 ------------------- chart -----------------
 --------------------------------------------*/
-
 .crypt-fulldiv-linechart{
     padding: 22px 0px 100px 0;
     text-align: center;
@@ -552,6 +848,10 @@ img.crypt-market-cap-logo{
     height: 100%;
     z-index: -1;
     box-shadow: 0 3px 15px #f1f1f1;
+}
+body.crypt-dark .crypt-fulldiv-linechart:after{
+    background: #202943;
+    box-shadow: none;
 }
 .crypt-fulldiv-linechart h4.coinname{
     margin-top: 30px;
@@ -600,13 +900,22 @@ img.crypt-market-cap-logo{
 .crypt-currency-slider{
     border: 1px solid #ecf4fe;
 }
+body.crypt-dark .crypt-currency-slider{
+    border: none;
+}
 .crypt-slider-content{
     background: #fff;
     /* padding: 40px; */
 }
+body.crypt-dark .crypt-slider-content{
+    background: #121a2f;
+}
 .crypt-slider-content .crypt-slider-balance{
     padding: 60px 25px 60px 36px;
     border-right: 1px solid #ecf4fe;
+}
+body.crypt-dark .crypt-slider-content .crypt-slider-balance{
+    border-right: 1px solid #202943;
 }
 .crypt-slider-content .crypt-slider-balance h5{}
 .crypt-slider-content .crypt-slider-balance p:first-child{}
@@ -623,10 +932,7 @@ img.crypt-market-cap-logo{
     padding: 55px 30px;
 }
 
-/* =--------------------------------
---------- Deposit / withdraw ---------
---------------------------------------- */
-
+/* =---- dash board ---- */
 .crypt-dash-search{
     position: relative;
 }
@@ -636,6 +942,14 @@ img.crypt-market-cap-logo{
     width: 100%;
     background: #f9fcff;
     padding: 10px;
+}
+body.crypt-dark .crypt-dash-search input[type=search]{
+    height: 48px;
+    border: 1px solid #202943;
+    width: 100%;
+    background: #202943;
+    padding: 10px;
+    color: #fff;
 }
 .crypt-dash-search input[type=search]:focus{
     outline: none;
@@ -652,6 +966,10 @@ img.crypt-market-cap-logo{
     font-weight: 600;
     /* right: 0; */
 }
+body.crypt-dark .crypt-dash-search button[type=submit] i{
+    color: #fff;
+    /* right: 0; */
+}
 .crypt-dash-search button[type=submit]:focus{}
 .crypt-big-list{
     margin-top: 10px;
@@ -663,6 +981,9 @@ img.crypt-market-cap-logo{
     list-style: none;
     border: 1px solid #ecf4fe;
     margin-bottom: 10px;
+}
+body.crypt-dark .crypt-big-list li{
+    border: 1px solid #2f3a56;
 }
 .crypt-big-list li a{
     display: block;
@@ -677,9 +998,16 @@ img.crypt-market-cap-logo{
     -o-transition: all 0.4s ease;
     -ms-transition: all 0.4s ease;
 }
+body.crypt-dark .crypt-big-list li a{
+    color: #fff;
+}
 .crypt-big-list li a:hover,
 .crypt-big-list li a:focus{
     background: #ffedea;
+}
+body.crypt-dark .crypt-big-list li a:hover,
+body.crypt-dark .crypt-big-list li a:focus{
+    background: #242c40 !important;
 }
 .crypt-big-list li:last-child{
     margin-bottom:0;
@@ -689,7 +1017,7 @@ img.crypt-market-cap-logo{
 }
 .crypt-dash-withdraw{}
 .crypt-withdraw-heading{
-    background: #ecf4fe;
+    background: #202943;
     padding: 25px 0 25px 35px;
 }
 .crypt-withdraw-heading p{
@@ -706,7 +1034,8 @@ img.crypt-market-cap-logo{
     display: inline-block;
     margin-top: 10px;
 }
-.crypt-withdraw-body{
+body.crypt-dark .crypt-withdraw-body{
+    background: #131a33 !important;
 }
 .crypt-withdraw-body .nav-pills{
     padding: 30px 7px;
@@ -716,6 +1045,13 @@ img.crypt-market-cap-logo{
     color: #555;
     font-size: 13px;
     font-weight: 800;
+}
+body.crypt-dark .crypt-withdraw-body .nav-pills a{
+    color: #fff;
+}
+body.crypt-dark .crypt-withdraw-body .nav-pills a.active{
+
+    color: #f7614e;
 }
 .crypt-withdraw-body .nav-pills a.active{
     background: transparent;
@@ -729,6 +1065,11 @@ img.crypt-market-cap-logo{
 }
 .crypt-withdraw-body .tab-content{
     border-left: 1px solid #f1f1f1;
+    padding: 30px;
+}
+
+body.crypt-dark .crypt-withdraw-body .tab-content{
+    border-left: 1px solid #2f3a56;
     padding: 30px;
 }
 .crypt-withdraw-body .tab-content .tab-pane{}
@@ -759,6 +1100,21 @@ img.crypt-market-cap-logo{
   cursor: pointer;
   -webkit-transition: all 0.25s linear;
   border: 1px solid #f1f1f1;
+  font-weight: 600;
+}
+
+body.crypt-dark .crypt-radio-boxed label{
+  display: block;
+  color: #fff;
+  position: relative;
+  font-weight: 300;
+  font-size: 20px;
+  padding: 25px 25px 25px 56px;
+  margin: 5px auto;
+  z-index: 9;
+  cursor: pointer;
+  -webkit-transition: all 0.25s linear;
+  border: 1px solid #2f3a56;
   font-weight: 600;
 }
 .crypt-radio-boxed label:hover{
@@ -823,6 +1179,14 @@ select.crypt-image-select{
     border: 1px solid #f1f1f1;
     outline: none;
 }
+body.crypt-dark select.crypt-image-select{
+    padding: 15px;
+    width: 100%;
+    border: 1px solid #2f3a56;
+    outline: none;
+    color:#ddd;
+    background: #131a33;
+}
 select.crypt-image-select option{}
 .input-text-select{}
 .input-text-select input[type=text]{
@@ -845,7 +1209,7 @@ row.md-gutter [class*='col-'] {
 /*----- candlestick chart --------*/
 #crypt-candle-chart > div > div{
     width: 100%;
-    height: 600px !important;
+    height: 400px !important;
 }
 .crypt-star{
     margin-top: -4px;
@@ -855,7 +1219,6 @@ row.md-gutter [class*='col-'] {
         display: none;
     }
 }
-
 @media ( max-width: 1200px ){
     .crypt-floatable-menu{
         display: none;
@@ -907,32 +1270,33 @@ body{
 ::-webkit-scrollbar {
     background: transparent;
     width: 6px;
-    height: 6px;
+    height: 10px;
+    border-radius: 10px;
 }
 ::-webkit-scrollbar-thumb {
-    background-color: rgba(0, 0, 0, 0.2);
-    border: solid rgba(0,0,0,0) 6px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: solid rgba(0,0,0,0) 2px;
+    transition: all 0.4s ease
 }
 ::-webkit-scrollbar-thumb:hover {
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(255, 255, 255, 0.8);
 }
 /*------- Login / Register ------------*/
 .cryptorio-forms{}
 .cryptorio-forms-dark{}
-.cryptorio-main-form{
-    background: url('../images/bg.png') center no-repeat;
+.cryptorio-forms-dark .cryptorio-main-form{
+    background: #131722 url('../images/bg.png') center no-repeat;
     padding: 70px 60px 100px 60px;
-    box-shadow: 0 0 53px #f1f1f1;
+    box-shadow: 0 0 53px #00000063;
     border-radius: 5px;
-}
-.cryptorio-main-form a{
-    color: #000;
-    font-size: 15px;
-    font-weight: 600;
 }
 .cryptorio-main-form label{
     margin-bottom: 15px;
     font-size: 16px;
+}
+.cryptorio-main-form a{
+    font-size: 15px;
+    font-weight: 600;
 }
 .cryptorio-main-form input{
     display: block;
@@ -946,6 +1310,8 @@ body{
     color: #fff;
 }
 .cryptorio-forms-dark .cryptorio-main-form input{
-    background-color: #1B2134;
-    border: 1px solid #2c3552;
+
+background-color: #1B2134;
+
+border: 1px solid #2c3552;
 }

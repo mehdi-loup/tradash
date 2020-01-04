@@ -5,9 +5,8 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <marquee behavior="scroll" scrollamount="15" direction="left">
-          Your slide-in text goes here
-        </marquee>
+        <p><a href="/Dark/index.html"> Dark theme</a></p>
+        <p><a href="/Light/index.html"> Light theme</a></p>
       </header>
     </div>
   );
