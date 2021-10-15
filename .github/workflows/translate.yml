@@ -31,9 +31,10 @@ jobs:
         env:
           KEY_FILE: ${{ secrets.GOOGLE_TRANSLATE_API_KEY }}
         run: |
-          echo "$KEY_FILE"
           touch translate-service-account.json
           echo "{pop: 'sdf', sdkljf: 'ssdfsd sdf'}" >> translate-service-account.json  
+          cat translate-service-account.json
+          echo "$KEY_FILE" >> translate-service-account.json  
           cat translate-service-account.json
 
       
