@@ -32,7 +32,7 @@ jobs:
           KEY_FILE: ${{ secrets.GOOGLE_TRANSLATE_API_KEY }}
         run: |
           echo "$KEY_FILE"
-          echo "${{toJSON("$KEY_FILE")}}"
+          echo "${{toJSON($KEY_FILE)}}"
           touch translate-service-account.json
           echo "{pop: 'sdf', sdkljf: 'ssdfsd sdf'}" >> translate-service-account.json  
 
