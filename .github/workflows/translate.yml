@@ -34,10 +34,13 @@ jobs:
           echo "$KEY_FILE"
           touch translate-service-account.json
           echo "{pop: 'sdf', sdkljf: 'ssdfsd sdf'}" >> translate-service-account.json  
+          cat translate-service-account.json
 
       
       - name: Run the translation script
-        run: yarn json-autotranslate -i public/locales -c translate-service-account.json -m i18next
+        run: |
+          cat translate-service-account.json
+          yarn json-autotranslate -i public/locales -c translate-service-account.json -m i18next
       
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
