@@ -34,7 +34,7 @@ jobs:
           echo "$KEY_FILE"
           echo "${{toJSON("$KEY_FILE")}}"
           touch translate-service-account.json
-          echo "${{toJSON("$KEY_FILE")}}" >> translate-service-account.json  
+          echo "{pop: 'sdf', sdkljf: 'ssdfsd sdf'}" >> translate-service-account.json  
 
       
       - name: Run the translation script
