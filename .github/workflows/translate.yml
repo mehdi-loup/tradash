@@ -1,0 +1,55 @@
+# This is a basic workflow to help you get started with Actions
+
+name: Translation automation 
+
+on: workflow_dispatch
+
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "translate"
+  translate:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v2
+      
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+     
+      - name: Get yarn cache directory path
+        id: yarn-cache-dir-path-e2e
+        run: echo "::set-output name=dir::$(yarn cache dir)"
+
+      - name: Prune Projects
+        run: rm -rf apps/frontend apps/mobile libs/hooks apps/backend
+
+      - uses: actions/cache@v2
+        id: yarn-cache-e2e
+        with:
+          path: ${{ steps.yarn-cache-dir-path-e2e.outputs.dir }}
+          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-yarn-
+
+      - name: Cache browsers
+        uses: actions/cache@v2
+        with:
+          path: '/home/runner/.cache/ms-playwright/'
+          key: ${{ runner.os }}-browsers
+
+      - name: Install Dependencies
+        run: yarn install --prefer-offline
+
+      - name: Install Dependencies
+        run: yarn add json-autotranslate
+ 
+      # Runs a single command using the runners shell
+      - name: Run the translation script
+        run: yarn json-autotranslate -i public/locales -c translate-service-account.json -m i18next
+
+
