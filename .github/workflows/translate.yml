@@ -20,27 +20,6 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: '14'
-     
-      - name: Get yarn cache directory path
-        id: yarn-cache-dir-path-e2e
-        run: echo "::set-output name=dir::$(yarn cache dir)"
-
-      - name: Prune Projects
-        run: rm -rf apps/frontend apps/mobile libs/hooks apps/backend
-
-      - uses: actions/cache@v2
-        id: yarn-cache-e2e
-        with:
-          path: ${{ steps.yarn-cache-dir-path-e2e.outputs.dir }}
-          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-yarn-
-
-      - name: Cache browsers
-        uses: actions/cache@v2
-        with:
-          path: '/home/runner/.cache/ms-playwright/'
-          key: ${{ runner.os }}-browsers
 
       - name: Install Dependencies
         run: yarn install --prefer-offline
@@ -48,8 +27,11 @@ jobs:
       - name: Install Dependencies
         run: yarn add json-autotranslate
  
-      # Runs a single command using the runners shell
       - name: Run the translation script
         run: yarn json-autotranslate -i public/locales -c translate-service-account.json -m i18next
+      
+      - uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: Adding translations
 
 
