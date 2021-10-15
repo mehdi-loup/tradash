@@ -27,6 +27,12 @@ jobs:
       - name: Install Dependencies
         run: yarn add json-autotranslate
  
+      - name: Create service account key file
+        id: key-file-path
+        env:
+          KEY_FILE: ${{ secrets.GOOGLE_TRANSLATE_API_KEY }}
+        run: touch translate-service-account.json && fromJson("$KEY_FILE") >> translate-service-account.json  
+
       - name: Run the translation script
         run: yarn json-autotranslate -i public/locales -c translate-service-account.json -m i18next
       
