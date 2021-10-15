@@ -29,11 +29,11 @@ jobs:
  
       - name: Create service account key file
         env:
-          KEY_FILE: ${{ toJSON(${{ secrets.GOOGLE_TRANSLATE_API_KEY }}) }}
+          KEY_FILE: ${{ secrets.GOOGLE_TRANSLATE_API_KEY }}
         run: |
-          echo "$KEY_FILE"
+          echo toJSON("$KEY_FILE")
           touch translate-service-account.json
-          echo "$KEY_FILE" >> translate-service-account.json  
+          echo toJSON("$KEY_FILE") >> translate-service-account.json  
 
       
       - name: Run the translation script
