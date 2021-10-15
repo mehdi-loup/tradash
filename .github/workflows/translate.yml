@@ -31,9 +31,10 @@ jobs:
         env:
           KEY_FILE: ${{ secrets.GOOGLE_TRANSLATE_API_KEY }}
         run: |
-          echo toJSON("$KEY_FILE")
+          echo "$KEY_FILE"
+          echo "${{toJSON("$KEY_FILE")}}"
           touch translate-service-account.json
-          echo toJSON("$KEY_FILE") >> translate-service-account.json  
+          echo "${{toJSON("$KEY_FILE")}}" >> translate-service-account.json  
 
       
       - name: Run the translation script
