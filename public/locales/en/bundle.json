@@ -1,0 +1,13 @@
+{
+  "title": "My Bundles",
+  "create": "Create Bundle",
+  "manage": "Manage Bundle",
+  "label": "Bundle Name",
+  "include-wallets": "Wallets to Include",
+  "address": "{{ count }} address",
+  "address_plural": "{{ count }} addresses",
+  "remove-modal": {
+    "title": "Remove bundle",
+    "message": "Are you sure you want to remove the bundle {{ label }}?"
+  }
+}
