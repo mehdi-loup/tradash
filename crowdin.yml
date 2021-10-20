@@ -1,0 +1,13 @@
+"project_id": "481295"                                   #open project settings and go to API section 
+"api_token": "d64d80de58f37af4fd59952d986c805a"          #open profile settings and go to API & SSO > New Token > create Token
+"base_path": "."                                         #path to your project directory on a local machine
+"base_url": "https://crowdin.com"
+"preserve_hierarchy": true
+
+"files": [
+  {
+      "source": "public/locales/en/crowdin.json",                                          #source files filter
+      "translation": "public/locales/%two_letters_code%/%original_file_name%",             #where translations are stored
+      "update_option": "update_as_unapproved"                                              #
+  }
+]
