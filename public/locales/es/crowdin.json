@@ -1,0 +1,9 @@
+{
+    "hello": "hola mundo",
+    "world": "la pequeña roca en la que vivimos",
+    "level1": {
+        "article1": "This is a new article",
+        "article2": "And another article",
+        "article3": "Último uno"
+    }
+}
