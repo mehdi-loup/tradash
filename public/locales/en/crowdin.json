@@ -1,4 +1,9 @@
 {
     "hello": "hello world",
-    "world": "the small rock we live on"
+    "world": "the small rock we live on",
+    "level1": {
+      "article1": "This is a new article",
+      "article2": "And another article",
+      "article3": "Last one"
+    }
 }
