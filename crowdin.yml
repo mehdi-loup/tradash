@@ -1,6 +1,6 @@
-"project_id": "481295"                                   #open project settings and go to API section 
-"api_token": "d64d80de58f37af4fd59952d986c805a"          #open profile settings and go to API & SSO > New Token > create Token
-"base_path": "."                                         #path to your project directory on a local machine
+"project_id": "481295"                                                                                   #open project settings and go to API section 
+"api_token": "6d801ae147c9811449d8e876bf436a674ed53206a7bd95d014b133dae6888658152de36aace8f2d9"          #open profile settings and go to API & SSO > New Token > create Token
+"base_path": "."                                                                                         #path to your project directory on a local machine
 "base_url": "https://crowdin.com"
 "preserve_hierarchy": true
 
