@@ -19,6 +19,7 @@ jobs:
         upload_translations: true
         download_translations: true
       env:
+        source: 'public/locales/en/crowdin.json'
         GITHUB_TOKEN: ${{ secrets.CROWDIN_GH_TOKEN }}
         CROWDIN_PROJECT_ID: ${{ secrets.CROWDIN_PROJECT_ID }}
         CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_PERSONAL_TOKEN }}
