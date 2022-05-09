@@ -4,7 +4,7 @@ import logo from './logo.svg';
 import './App.css';
 
 
-function App() {
+async function App() {
 const MAINNET_RPC_URL = 'https://mainnet.infura.io/v3/<INFURA_KEY>'
 
 const injected = injectedModule()
